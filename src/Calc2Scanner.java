@@ -9,12 +9,13 @@ public class Calc2Scanner {
                 scan = new Scanner(System.in);
                 String str = scan.next();
                 System.out.println("最初のトークンは: " + str);
-                int a = Integer.parseInt(str);
+                int first = Integer.parseInt(str);
                 str = scan.next();
                 System.out.println("次のトークンは  : " + str);
-                int b = Integer.parseInt(str);
-                System.out.println(a + b);
+                int second = Integer.parseInt(str);
                 i++;
+                System.out.println(i+"回目の合計は  : " + (first+second));
+                System.out.println("----次の数字の入力をお願いします ");
             }
             catch(NumberFormatException e) {
                 System.out.println(e);
