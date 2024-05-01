@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
 public class MyExceptionHoliday {
+    static Scanner scan;
     public static void main(String[] args) {
         MyExceptionHoliday mEholiday = new MyExceptionHoliday();
-        Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
         System.out.println("日付を入力してください");
         while (scan.hasNext()) {
             try {

@@ -5,9 +5,11 @@ public class XmasTreeKadai {
     static int N;
     static int W;
     static int L;
+    static Scanner scan;
 	public static void main(String[] args) {
         System.out.println("最大の葉の横幅,幹の横幅,幹の長さの順で記入してください");
-		Scanner scan = new Scanner(System.in);
+        System.out.println("記入例:10,7,3");
+		scan = new Scanner(System.in);
 		String str = scan.next();
 		System.out.println("クリスマスツリーのトークンは: " + str);
         System.out.println("文字を分割すると・・・");
