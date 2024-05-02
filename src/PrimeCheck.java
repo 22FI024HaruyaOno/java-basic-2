@@ -114,6 +114,38 @@ public class PrimeCheck {
         System.out.println("Ranking");
         for(int k = 0; k < primeRemainderRanking.length; k ++) {
             for(int l = 0; l < primeRemainderRanking[k].length; l ++) {
+                switch (k) {
+                    case 0:
+                        System.out.print("1-");
+                        break;
+                    case 1:
+                        System.out.print("3-");
+                        break;
+                    case 2:
+                        System.out.print("7-");
+                        break;
+                    case 3:
+                        System.out.print("9-");
+                        break;
+                    default:
+                        break;
+                }
+                switch (l) {
+                    case 0:
+                        System.out.print("1:");
+                        break;
+                    case 1:
+                        System.out.print("3:");
+                        break;
+                    case 2:
+                        System.out.print("7:");
+                        break;
+                    case 3:
+                        System.out.print("9:");
+                        break;
+                    default:
+                        break;
+                }
                 System.out.print(primeRemainderRanking[k][l] + " ");
             }
             System.out.println();
